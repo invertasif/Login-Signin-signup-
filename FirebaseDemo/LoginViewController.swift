@@ -40,7 +40,9 @@ class LoginViewController: UIViewController {
                 }
 
             } else {
-                print("User is not authenticated")
+                print("User is authenticated")
+                
+                self.performSegue(withIdentifier: "taskViewController", sender: nil)
             }
         })
     }
@@ -64,10 +66,6 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func showAllert(message: String) {
         let allertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)

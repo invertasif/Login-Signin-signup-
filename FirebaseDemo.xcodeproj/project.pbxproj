@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8A0FB49C239CA9A27AD624D6 /* Pods_FirebaseDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885648F6B28BF3ADD6118621 /* Pods_FirebaseDemo.framework */; };
+		E0236E8A1ECC7358007CD1BC /* DBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0236E891ECC7358007CD1BC /* DBViewController.swift */; };
+		E0236E8C1ECC869D007CD1BC /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0236E8B1ECC869D007CD1BC /* TaskTableViewController.swift */; };
+		E0236E901ECC86FC007CD1BC /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0236E8F1ECC86FC007CD1BC /* Task.swift */; };
 		E08D37EF1ECB1A2D00460A7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E08D37EE1ECB1A2D00460A7C /* GoogleService-Info.plist */; };
 		E08D37F11ECB1E9B00460A7C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D37F01ECB1E9B00460A7C /* LoginViewController.swift */; };
 		E08D37F31ECB1EA600460A7C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D37F21ECB1EA600460A7C /* SignUpViewController.swift */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		885648F6B28BF3ADD6118621 /* Pods_FirebaseDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0236E891ECC7358007CD1BC /* DBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBViewController.swift; sourceTree = "<group>"; };
+		E0236E8B1ECC869D007CD1BC /* TaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
+		E0236E8F1ECC86FC007CD1BC /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		E08D37EE1ECB1A2D00460A7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E08D37F01ECB1E9B00460A7C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E08D37F21ECB1EA600460A7C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -102,11 +108,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E0236E8E1ECC86DE007CD1BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0236E8F1ECC86FC007CD1BC /* Task.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		E08D37F41ECB1F1600460A7C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				E08D37F01ECB1E9B00460A7C /* LoginViewController.swift */,
+				E0236E8B1ECC869D007CD1BC /* TaskTableViewController.swift */,
 				E08D37F21ECB1EA600460A7C /* SignUpViewController.swift */,
+				E0236E891ECC7358007CD1BC /* DBViewController.swift */,
 				E0A12C711ECB235900FD7F52 /* BaseViewController.swift */,
 			);
 			name = Controllers;
@@ -147,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				E0C8B6FA1EC9E85D00EC6B4E /* AppDelegate.swift */,
+				E0236E8E1ECC86DE007CD1BC /* Model */,
 				E08D37F41ECB1F1600460A7C /* Controllers */,
 				E08D37F51ECB1F3200460A7C /* View */,
 				E0C8B7011EC9E85D00EC6B4E /* Assets.xcassets */,
@@ -360,9 +377,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0236E8C1ECC869D007CD1BC /* TaskTableViewController.swift in Sources */,
 				E08D37F11ECB1E9B00460A7C /* LoginViewController.swift in Sources */,
 				E0A12C721ECB235900FD7F52 /* BaseViewController.swift in Sources */,
 				E08D37F31ECB1EA600460A7C /* SignUpViewController.swift in Sources */,
+				E0236E8A1ECC7358007CD1BC /* DBViewController.swift in Sources */,
+				E0236E901ECC86FC007CD1BC /* Task.swift in Sources */,
 				E0C8B6FB1EC9E85D00EC6B4E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
